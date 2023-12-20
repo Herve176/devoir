@@ -8,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './task-list.component.scss'
 })
 export class TaskListComponent {
-
+  id!: number;
+  title!: string;
+  completed!: boolean;
+  ngOnInit(){
+    this.id= 0;
+    this.title='here is the first title!';
+    this.completed=true;
+  }
 }
