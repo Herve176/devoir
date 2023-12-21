@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit,Input } from '@angular/core';
+import { Tasklist } from '../models/task-list.models';
 
 @Component({
   selector: 'app-task-list',
@@ -8,12 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './task-list.component.scss'
 })
 export class TaskListComponent {
-  id!: number;
-  title!: string;
-  completed!: boolean;
-  ngOnInit(){
-    this.id= 0;
-    this.title='here is the first title!';
-    this.completed=true;
-  }
+  @Input()tasklist!:Tasklist
+  ngOnInit(){}
 }
