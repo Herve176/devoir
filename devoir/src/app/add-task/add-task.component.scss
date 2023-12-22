@@ -14,7 +14,7 @@ body {background-color: #FAFAFA;}
     height: 400px;
     margin: 100px auto;
     color: black;
-    display: block;
+    display: flex;
 }
 .main:before {
     position: absolute;
@@ -42,8 +42,25 @@ body {background-color: #FAFAFA;}
     left: -23px;
     top: 73px;
 }
-.button{
-    
-    border-radius: 2px;
 
+.insert{
+    background-color: black;
+    color: white;
+    width: 230px;
+    height: 40px;
+    border-radius: 10px;
 }
+.write{
+    margin-left: 10%;
+    margin-bottom: 75%;
+}
+.addnew{
+    margin-top: 50%;
+}
+.btn{
+    background-color:greenyellow;
+    width: 90px;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
