@@ -1,4 +1,4 @@
-import { Component,OnInit,Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Tasklist } from '../models/task-list.models';
 
 @Component({
@@ -9,6 +9,11 @@ import { Tasklist } from '../models/task-list.models';
   styleUrl: './task-list.component.scss'
 })
 export class TaskListComponent {
-  @Input()tasklist!:Tasklist
+  
+  @Input()tasklist!:Tasklist;
+title: any;
+id: any;
+completed: any;
+
   ngOnInit(){}
 }
