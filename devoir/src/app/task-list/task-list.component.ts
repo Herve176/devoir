@@ -15,5 +15,7 @@ title: any;
 id: any;
 completed: any;
 
-  ngOnInit(){}
+ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 }
