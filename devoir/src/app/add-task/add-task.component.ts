@@ -8,6 +8,9 @@ import { AddTask } from '../models/add-task.models';
   styleUrl: './add-task.component.scss'
 })
 export class AddTaskComponent implements OnInit{
+title!: string;
+id!: number;
+completed!: boolean;
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }

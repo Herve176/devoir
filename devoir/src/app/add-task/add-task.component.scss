@@ -1,4 +1,49 @@
-.button{
-    background-color: blueviolet;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {background-color: #FAFAFA;}
+/* Start Task */
+.main {
+    position: relative;
+    background-color: #FFC80F;
+    width: 300px;
+    height: 400px;
+    margin: 100px auto;
     color: black;
+    display: block;
+}
+.main:before {
+    position: absolute;
+    content: "Css Task";
+    width: 333px;
+    height: 50px;
+    background-color: #3A3A3A;
+    top: 50px;
+    left: -33px;
+    color: #FFF;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: 'arial', tahoma;
+    letter-spacing: 1px;
+}
+.main:after {
+    position: absolute;
+    content: "";
+    border-top:25px solid transparent;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-bottom:25px solid #3A3A3A;
+    transform: rotate(45deg);
+    left: -23px;
+    top: 73px;
+}
+.button{
+    
+    border-radius: 2px;
+
 }
