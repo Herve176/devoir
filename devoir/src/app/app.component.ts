@@ -14,13 +14,25 @@ import { AddTaskComponent } from "./add-task/add-task.component";
     imports: [CommonModule, RouterOutlet, TaskListComponent, AddTaskComponent]
 })
 export class AppComponent {
-  tasklist!:Tasklist;
+  tasklist!:Tasklist[];
   addtask!:AddTask;
   ngOnInit(){
-    this.tasklist=new Tasklist(
-      5,
-      'just a title',
-      true
-    );
+    this.tasklist=[
+  {
+      id:5,
+      title: 'just a title',
+      completed:true
+    },
+  {
+      id:6,
+      title:'title',
+      completed:false
+    },
+    {
+      id:7,
+      title:'hii',
+      completed:false
+    },
+  ];
   }
 }

@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<app-task-list *ngFor = "let i of tasklist" [tasklist] = "i"]>
+  <router-outlet></router-outlet>
+</app-task-list>
+
