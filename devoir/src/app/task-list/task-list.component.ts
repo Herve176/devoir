@@ -10,10 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class TaskListComponent {
 
-  @Input()tasklist!:Tasklist;
-title!: string;
-id!: number;
-completed!: boolean;
+@Input()tasklists!: Tasklist[];
 
 ngOnInit(): void {
     throw new Error('Method not implemented.');
