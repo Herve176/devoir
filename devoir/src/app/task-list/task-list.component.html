@@ -1,9 +1,13 @@
 <div class="main">
 <div>
-<div *ngFor="let tasklist of tasklists">
-<p>{{ tasklist.title }}</p>
-<p class="completed">{{ tasklist.completed }}</p>
+
+<div  *ngFor="let tasklist of tasklists">
+  <div class="tas">
+<div class="ti"> <p>{{ tasklist.title }}</p> </div>
+<p class="completed" *[ngStyle]="{'background-color' : green}">{{ tasklist.completed }}</p>
 </div>
+</div>
+<div class="rectangle"></div>
 
 <input class="addbtn" type="button" onclick="location.href='/addtask';" value="addtask"/>
 </div>
