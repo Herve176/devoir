@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './task-list.component.scss'
 })
 export class TaskListComponent {
+[x: string]: any;
 
 @Input()tasklists!: Tasklist[];
 

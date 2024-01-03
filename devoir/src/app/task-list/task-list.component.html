@@ -2,7 +2,7 @@
 <div>
 
 <div  *ngFor="let tasklist of tasklists">
-  <div class="tas">
+  <div class="tas" style="margin-top: 35px; margin-left: 35px;">
 <div class="ti"> <p>{{ tasklist.title }}</p> </div>
 <p class="completed" *[ngStyle]="{'background-color' : green}">{{ tasklist.completed }}</p>
 </div>
