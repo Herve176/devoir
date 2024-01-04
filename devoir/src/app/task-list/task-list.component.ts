@@ -14,6 +14,6 @@ export class TaskListComponent {
 @Input()tasklists!: Tasklist[];
 
 ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    throw new Error('Method not implemented.')
   }
 }
