@@ -1,13 +1,12 @@
 <div class="main">
 <div>
 
-<div  *ngFor="let tasklist of tasklists">
-  <div class="tas" style="margin-top: 35px; margin-left: 35px;">
-<div class="ti"> <p>{{ tasklist.title }}</p> </div>
-<p class="completed" *[ngStyle]="{'background-color' : green}">{{ tasklist.completed }}</p>
+
+<div class="rectangle">
+  <div>
+    <app-task *ngFor="let tasklist of tasklists" [task]="tasklist"></app-task>
+    </div>
 </div>
-</div>
-<div class="rectangle"></div>
 
 <input class="addbtn" type="button" onclick="location.href='/addtask';" value="addtask"/>
 </div>

@@ -15,6 +15,7 @@ import { AddTaskComponent } from "./add-task/add-task.component";
 })
 export class AppComponent {
   tasklist!:Tasklist[];
+  
   ngOnInit(){
     this.tasklist=[
   {
