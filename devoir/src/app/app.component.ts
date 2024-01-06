@@ -28,12 +28,12 @@ export class AppComponent {
       title:'title',
       completed:false
     },
-    {
+  {
       id:7,
       title:'hii',
       completed:false
     },
-    {
+  {
       id:8,
       title:'crack',
       completed:true
