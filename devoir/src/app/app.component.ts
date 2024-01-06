@@ -15,7 +15,7 @@ import { AddTaskComponent } from "./add-task/add-task.component";
 })
 export class AppComponent {
   tasklist!:Tasklist[];
-  
+
   ngOnInit(){
     this.tasklist=[
   {
@@ -32,6 +32,11 @@ export class AppComponent {
       id:7,
       title:'hii',
       completed:false
+    },
+    {
+      id:8,
+      title:'crack',
+      completed:true
     },
   ];
   }
